@@ -1,2 +1,2 @@
 # devOpsLab
-Laboratorio practica git, jankins, docker &amp; kubernetes
+Laboratorio practica git, jenkins, docker &amp; kubernetes
