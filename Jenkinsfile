@@ -1,12 +1,12 @@
 pipeline {
 	agent any
 	stages ("Check files for both") {
-		stage("Check jenkins branch") { 
+		stage("Check Master branch") { 
 			steps{
 				build job: 'Git Master check file'
 			}
 		}
-		stage("build") { 
+		stage("Check Jenkins branch") { 
 			steps{
 				build job: 'Git Jenkins check file'
 			}
