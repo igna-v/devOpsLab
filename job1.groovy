@@ -7,7 +7,7 @@ job('Git Master check file') {
 		scm("* * * * *")
 	}
 	steps{
-		shell(
+		shell('
 archivo1=archivo.txt
 archivo2=README.md
 archivoMaster=A.txt
@@ -27,6 +27,6 @@ if [ -f "$archivoMaster" ]; then
     echo "$archivoMaster exist"
 else 
     exit 1
-fi)
+fi')
 	}
 }
