@@ -1,0 +1,31 @@
+pipeline {
+	agent any
+	stages {
+		stage("Check conexion al repo") { 
+			steps{
+				build job: 'Conectarse al repo'
+			}
+		}
+		stage("Ver que el dockerfile ande") { 
+			steps{
+				build job: 'Test dockerfile'
+			}
+		}
+		stage("Test image") { 
+			steps{
+				echo "a"
+			}
+		}
+		stage("Deploy to registry") { 
+			steps{
+				echo "b"
+			}
+		}
+		stage("Delpoy workin container") { 
+			steps{
+				echo "c"
+			}
+		}	
+	}
+}
+
